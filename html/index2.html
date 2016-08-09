@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>はじめてのHTML</title>
+  </head>
+  <body>
+
+<!--
+form
+  action: どこに送るか？
+  method: get / post
+input
+-->
+
+    <article>
+        <h1>アンケート</h1>
+        <form action="survey.php" method="post">
+            <p>メールアドレス: <input type="text" name="email"></p>
+            <p><input type="submit" value="送信！"></p>
+        </form>
+        <p>
+          コメント：
+          <textarea name="name" rows="8" cols="40">
+            コメントを書いてください
+          </textarea>
+        </p>
+        <p>
+               Phone:
+               <label><input type="checkbox" name="phone" value="android" checked> Android</label>
+               <input type="checkbox" name="phone" value="iphone" id="iphone"> <label for="iphone">iPhone</label>
+           </p>
+    </article>
+
+  </body>
+</html>
