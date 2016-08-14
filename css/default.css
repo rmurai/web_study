@@ -1,1 +1,10 @@
-* { color: skyblue;}
+/*html, body {height: 100%;}*/
+body{margin: 0}
+div {
+  background: silver;
+  width: 50%;
+  height: 50%;
+  border: orange 4px dotted;
+  padding: 100px  20px
+
+}
