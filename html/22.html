@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <title>はじめてのHTML</title>
+  </head>
+  <body>
+
+<!--
+input
+    email
+    number
+    date
+-->
+
+    <article>
+        <h1>アンケート</h1>
+        <form action="survey.php" method="post" novalidate>
+            <p>メールアドレス: <input type="email" name="email" required></p>
+            <p>料金: <input type="number" name="price"></p>
+            <p>誕生日: <input type="date" name="birthday"></p>
+            <p><input type="submit" value="送信！"></p>
+        </form>
+    </article>
+
+  </body>
+</html>

@@ -16,7 +16,7 @@ input
     <article>
         <h1>アンケート</h1>
         <form action="survey.php" method="post">
-            <p>メールアドレス: <input type="text" name="email"></p>
+            <p>メールアドレス: <input type="email" name="email" required></p>
             <p><input type="submit" value="送信！"></p>
         </form>
         <p>
@@ -30,6 +30,16 @@ input
                <label><input type="checkbox" name="phone" value="android" checked> Android</label>
                <input type="checkbox" name="phone" value="iphone" id="iphone"> <label for="iphone">iPhone</label>
            </p>
+        <p>City:
+          <select class="" name="city" multiple size="5">
+            <option value="tokyo">Tokyo</option>
+            <option value="nagoya">Nagoya</option>
+            <option value="kyoto">Kyoto</option>
+            <option value="osaka">Osaka</option>
+            <option value="fukuoka">Fukuoka</option>
+          </select>
+
+        </p>
     </article>
 
   </body>
