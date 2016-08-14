@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>scriptタグ内での自己言及</title>
+  </head>
+  <body>
+    <div> </div>
+    <div> </div>
+    <script>
+      var lst = [1, 2, 3, 4, 5];
+      var square = lst.map(function(element) {return element * element;});
+      var s = lst + "の要素をそれぞれ2乗すると" + square;
+      document.getElementsByTagName("div")[0].firstChild.nodeValue=s;
+      var run_program = document.getElementsByTagName("script")[0].firstChild.nodeValue.split(";")
+      ;
+      document.getElementsByTagName("div")[1].firstChild.nodeValue=run_program.slice(0,5);//"5"の部分を抽象化したい
+    </script>
+  </body>
+</html>
